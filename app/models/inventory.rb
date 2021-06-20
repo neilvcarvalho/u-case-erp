@@ -1,5 +1,5 @@
 module Inventory
   def self.table_name_prefix
-    'inventory_'
+    "inventory_"
   end
 end

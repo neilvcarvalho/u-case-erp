@@ -1,6 +1,5 @@
-
 class Inventory::CreateProduct < Micro::Case
-  flow self.call!
+  flow call!
 
   attributes :company, :params
 
@@ -14,7 +13,7 @@ class Inventory::CreateProduct < Micro::Case
 
     Success result: { product: product }
   rescue ActiveRecord::RecordInvalid => e
-    Failure :invalid_product, result: { errors: product.errors }
+    Failure :invalid_product, result: { errors: e.record.errors }
   rescue ActionController::ParameterMissing => e
     Failure :parameter_missing, result: { message: e.message }
   end

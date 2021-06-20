@@ -10,7 +10,9 @@
 	"settings": {
 		"terminal.integrated.defaultProfile.linux": "/bin/zsh",
 		"ruby.lint": {
-      "rubocop": true
+      "rubocop": {
+				"useBundler": true
+			}
     }
 	},
 

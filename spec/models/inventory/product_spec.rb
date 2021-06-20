@@ -1,5 +1,9 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe Inventory::Product, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "is valid with valid params" do
+    product = FactoryBot.create(:inventory_product)
+
+    expect(product).to be_valid
+  end
 end
