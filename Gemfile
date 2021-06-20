@@ -24,6 +24,9 @@ gem "jbuilder", "~> 2.7"
 # Flexible authentication solution for Rails with Warden.
 gem "devise"
 
+# Represent use cases in a simple and powerful way while writing modular, expressive and sequentially logical code.
+gem "u-case", "~> 4.5.1", require: "u-case/with_activemodel_validation"
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
