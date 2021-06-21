@@ -1,3 +1,7 @@
+# The CreateProduct interface is responsible for creating products in the inventory.
+#
+# This class **may** be used in any module and is part of the Inventory public interface.
+
 class Inventory::CreateProduct < Micro::Case
   flow call!
 

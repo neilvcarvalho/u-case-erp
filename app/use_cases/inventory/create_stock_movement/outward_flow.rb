@@ -1,3 +1,7 @@
+# The OutwardFlow class is responsible for creating an outward stock movement.
+#
+# This class **may** be used in any module and is part of the Inventory public interface.
+
 module Inventory
   module CreateStockMovement
     class OutwardFlow < Micro::Case

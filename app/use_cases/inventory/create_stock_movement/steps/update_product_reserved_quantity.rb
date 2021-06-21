@@ -1,3 +1,8 @@
+# The UpdateProductReservedQuantity class is responsible for updating the reserved quantity of a product when creating
+# an outward stock movement.
+#
+# This class **must not** be used outside the Inventory::CreateStockMovement module.
+
 module Inventory
   module CreateStockMovement
     module Steps

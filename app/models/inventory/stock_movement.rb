@@ -1,3 +1,10 @@
+# The Inventory::StockMovement class is responsible for the persistence of product stock movements.
+#
+# Records **must not** be created or updated directly.
+#
+# Stock movements **must** be created using the public interface of the Inventory::CreateStockMovement module.
+# Stock movement confirmations **must** be created using public interface of the Inventory::ConfirmStockMovement module.
+
 class Inventory::StockMovement < ApplicationRecord
   belongs_to :product, class_name: "Inventory::Product", foreign_key: :inventory_product_id,
                        inverse_of: :stock_movements
