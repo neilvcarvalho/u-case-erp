@@ -1,3 +1,7 @@
+# The Inventory::Product class is responsible for the persistence of products.
+#
+# Records **must not** be created or updated directly.
+
 class Inventory::Product < ApplicationRecord
   belongs_to :company, inverse_of: :inventory_products
   has_many :stock_movements, class_name: "Inventory::StockMovement", foreign_key: :inventory_product_id,
