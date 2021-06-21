@@ -10,7 +10,6 @@ module Inventory
           stock_movement_params[:quantity] = Float(stock_movement_params[:quantity]) * -1
           Success result: { product: product, params: stock_movement_params }
         rescue ArgumentError
-          stock_movement_params[:quantity] = nil
           Success result: { product: product, params: stock_movement_params }
         end
       end
