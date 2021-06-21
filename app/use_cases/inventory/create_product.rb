@@ -1,4 +1,4 @@
-# The CreateProduct interface is responsible for creating products in the inventory.
+# The CreateProduct class is responsible for creating products in the inventory.
 #
 # This class **may** be used in any module and is part of the Inventory public interface.
 
