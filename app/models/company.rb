@@ -4,6 +4,6 @@ class Company < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :inventory_products, class_name: "Inventory::Product"
-  has_many :inventory_stock_movements, class_name: "Inventory::StockMovement"
+  has_many :inventory_products, class_name: "Inventory::Product", inverse_of: :company
+  has_many :inventory_stock_movements, class_name: "Inventory::StockMovement", inverse_of: :company
 end
