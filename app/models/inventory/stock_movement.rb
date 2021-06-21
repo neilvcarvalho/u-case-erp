@@ -15,6 +15,10 @@ class Inventory::StockMovement < ApplicationRecord
 
   before_validation :assign_company, on: :create
 
+  def confirmed?
+    confirmed_at.present?
+  end
+
   private
 
   def assign_company
